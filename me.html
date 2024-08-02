@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>k3NZO</title>
+    <link rel="stylesheet" href="me.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="title">I am K3NZO</h1>
+            <p class="description">You’ve been detected. Your actions are being monitored.</p>
+        </header>
+        
+        <section class="contact-section">
+            <h2>Contact ME</h2>
+            <p>If you have any concerns or need assistance, fill out the form below. We’re always watching.</p>
+            <form id="contactForm" action="submit_form.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+        
+        <footer class="footer">
+            <p>&copy; 2024 ShadowCipher. All rights reserved.</p>
+        </footer>
+    </div>
+    <script src="script.js">
+        document.addEventListener('DOMContentLoaded', function() {
+    const contactForm = document.getElementById('contactForm');
+
+    contactForm.addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent actual form submission for demo purposes
+        alert('Your message has been received. We are monitoring all communications.');
+        
+        // You can handle form submission with AJAX here if desired
+    });
+});
+
+    </script>
+</body>
+</html>
